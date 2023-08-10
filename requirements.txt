@@ -1,0 +1,29 @@
+To successfully run the Python desktop notification application with task scheduling and WhatsApp integration , there are several prerequisites you need to have in place:
+
+1. Python: Ensure you have Python installed on your system. You can download the latest version of Python from the official [Python website](https://www.python.org/downloads/). This project assumes you're using Python 3.x.
+
+2. Tkinter: Tkinter is a standard GUI library for Python. It's included with most Python installations, so you typically don't need to install it separately.
+
+3. Plyer: Plyer is a Python library for accessing features commonly found on various operating systems. 
+You can install it using pip:
+   
+   ```
+   pip install plyer
+   ```
+
+4. pywhatkit: This library provides easy-to-use methods for sending WhatsApp messages, among other functionalities. 
+You can install it using pip:
+
+   ```
+   pip install pywhatkit
+   ```
+
+5. WhatsApp Account: You need an active WhatsApp account to send messages via WhatsApp using pywhatkit. Make sure you have WhatsApp installed on your mobile device and have configured it properly.
+
+6. Time Management: Make sure you understand how the time management functions in the script work. The script uses the `time.sleep` function for scheduling notifications, which may block other operations during the sleep period.
+
+7. Phone Number Configuration: Replace "+91YourNumber" in the `pwt.sendwhatmsg` function call with your actual phone number. Ensure you're using the correct country code and phone number format.
+
+8. Operating System Compatibility: While Tkinter and Python libraries are generally cross-platform, some features, especially system notifications and WhatsApp integration, might behave differently on different operating systems. It's a good idea to test the application on the target OS.
+
+Before running the application, it's advisable to have a clear understanding of each library's documentation and the code structure. Additionally, be cautious when using time.sleep for longer durations, as it can potentially impact the responsiveness of the application.
